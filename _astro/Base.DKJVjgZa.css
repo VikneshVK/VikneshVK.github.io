@@ -91,7 +91,7 @@ body {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(36px, 5.1vw, 82px);
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   line-height: 0.98;
 }
 
