@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <pattern id="fine" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="1.35" fill="#FFA02E"/></pattern>
+    <pattern id="dense" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="1.9" fill="#FFA02E"/></pattern>
+  </defs>
+  <path fill="url(#fine)" d="M21 7h22v14H21z"/>
+  <path fill="#14100A" d="M26 12h12v9H26z"/>
+  <rect x="5" y="18" width="54" height="40" rx="4" fill="url(#dense)"/>
+  <path fill="#14100A" d="M5 31h54v6H5z"/>
+  <rect x="27" y="28" width="10" height="13" rx="2" fill="url(#fine)"/>
+  <rect x="30" y="31" width="4" height="7" fill="#14100A"/>
+  <path fill="#14100A" d="M12 46h11v5H12zm30 0h10v5H42z"/>
+</svg>

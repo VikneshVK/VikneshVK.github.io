@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="vkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" fill="#0B0716"/>
+  <path d="M6.5 0v32M0 6.5h32M25.5 0v32M0 25.5h32" stroke="#241740" stroke-width="1"/>
+  <rect x="2.5" y="2.5" width="27" height="27" fill="none" stroke="url(#vkGrad)" stroke-width="3"/>
+  <text x="16" y="21.5" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700" fill="#F5EBFF" text-anchor="middle">VK</text>
+</svg>
