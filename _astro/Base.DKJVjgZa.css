@@ -265,3 +265,257 @@ body {
     font-weight: 700 !important;
   }
 }
+
+/* === TIMELINE WORK EXPERIENCE & EDUCATION SEPARATION === */
+.pq-cats {
+  display: flex;
+  align-items: stretch;
+  border-left: var(--filet) solid var(--encre);
+}
+
+.pq-cat-btn {
+  all: unset;
+  cursor: var(--cur-hand, pointer);
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--encre);
+  border-right: var(--trait-fin) solid var(--encre);
+  transition: background-color 80ms steps(2, end), color 80ms steps(2, end);
+}
+
+.pq-cat-btn:last-child {
+  border-right: none;
+}
+
+.pq-cat-btn:hover,
+.pq-cat-btn.crt-hover {
+  background: var(--grid);
+  color: var(--creme);
+}
+
+.pq-cat-btn.is-active {
+  background: var(--encre);
+  color: var(--papier);
+  font-weight: 700;
+}
+
+.pq-meta .chip.pq-cat-work {
+  background: rgba(168, 85, 247, 0.18);
+  border-color: var(--encre);
+  color: var(--creme);
+  font-weight: 600;
+}
+
+.pq-meta .chip.pq-cat-edu {
+  background: rgba(236, 72, 153, 0.2);
+  border-color: #ec4899;
+  color: #fbcfe8;
+  font-weight: 600;
+}
+
+.pq-rail .branch-divider {
+  stroke: var(--encre);
+  stroke-width: 1.5px;
+  stroke-dasharray: 4 4;
+  opacity: 0.55;
+}
+
+@media (max-width: 680px) {
+  .pq-cats {
+    border-left: var(--trait-fin) solid var(--encre);
+  }
+  .pq-cat-btn {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+}
+
+/* === SIMPLE CONTACT & RESUME CARD (IMAGE 2 LAYOUT) === */
+.os-window.mail {
+  width: min(640px, calc(100vw / var(--ui-zoom) - 32px));
+  left: max(16px, calc(50vw / var(--ui-zoom) - 320px)) !important;
+}
+
+.os-window.links {
+  display: none !important;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(28px, 4.5vh, 46px) clamp(20px, 4vw, 44px);
+  gap: 18px;
+}
+
+.contact-card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.2vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.contact-card-sub {
+  margin: -4px 0 6px;
+  font-family: var(--font-body);
+  font-size: clamp(14px, 1.3vw, 16.5px);
+  color: var(--encre);
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.contact-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.contact-row-label {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.contact-row-link {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+
+.contact-row-link:hover,
+.contact-row-link.crt-hover {
+  color: #f472b6;
+}
+
+.contact-copy-btn {
+  all: unset;
+  cursor: var(--cur-hand, pointer);
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  line-height: 1;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.contact-copy-btn:hover,
+.contact-copy-btn.crt-hover {
+  background: rgba(168, 85, 247, 0.25);
+  border-color: var(--encre);
+  color: #ffffff;
+}
+
+.contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.contact-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: background-color 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+.contact-social-pill:hover,
+.contact-social-pill.crt-hover {
+  background: rgba(168, 85, 247, 0.22);
+  border-color: var(--encre);
+}
+
+.contact-social-pill svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.contact-resumes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.contact-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #9333ea 0%, #d946ef 50%, #ec4899 100%);
+  border: 1px solid #f472b6;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(217, 70, 239, 0.35);
+  transition: filter 120ms ease, box-shadow 120ms ease;
+}
+
+.contact-resume-btn:hover,
+.contact-resume-btn.crt-hover {
+  filter: brightness(1.1);
+  box-shadow: 0 6px 26px rgba(236, 72, 153, 0.55);
+}
+
+.contact-resume-sub {
+  color: var(--encre);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.85;
+}
+
+.contact-resume-sub:hover,
+.contact-resume-sub.crt-hover {
+  color: #ffffff;
+  opacity: 1;
+}
